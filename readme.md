@@ -1,11 +1,24 @@
 # GIT
+
+- [GIT](#git)
+  - [Installation <a name="Installation"></a>](#installation-)
+      - [linux :](#linux-)
+      - [Mac :](#mac-)
+      - [Windows:](#windows)
+    - [Principale commande de base :](#principale-commande-de-base-)
+    - [Fonctionnement de GIT: <a name="#Commande"></a>](#fonctionnement-de-git-)
+      - [Créer un projet à partir d'un dépôt vide](#créer-un-projet-à-partir-dun-dépôt-vide)
+  - [Branches](#branches)
+  - [Pull request <a name="#Commande"></a>](#pull-request-)
+    - [Fonctionnement:](#fonctionnement)
+##Introduction<a name="Introduction"></a>
 GIT a été créé en 2005 par Linus Torvalds, créateur de LINUX. 
 C'est un Logiciel libre, gratuit, permettant de travailler en collabaration et de sauvegarder son travail. Tout en protégeant le code source, il permet de suivre chaque changements apportés, de garder une trace et revenir en arrière si besoin.
 Git permet de travailler en local sans nécessité de se connecter à internet. 
   
 
 
-## Installation
+## Installation <a name="Installation"></a>
 #### linux : 
 ```
 sudo dnf install git-all
@@ -18,7 +31,7 @@ sudo dnf install git-all
 #### Windows: 
 [Téléchargez-le](https://git-scm.com/download/win)
 
-### Principale commande de base :
+### Principale commande de base : 
 
 | Commande | Description |
 | ---- | ---- |
@@ -36,8 +49,9 @@ sudo dnf install git-all
 | git checkout | Change de branche |
 | git merge | Fusionne l'historique d'une branche dans la branche actuelle|
 
+![commande de base ](https://blog.freelancerepublik.com/wp-content/uploads/2021/12/Git-Architechture.png)
 
-### Fonctionnement de GIT:
+### Fonctionnement de GIT: <a name="#Commande"></a>
 
 
 #### Créer un projet à partir d'un dépôt vide
@@ -55,7 +69,7 @@ Si vous voulez add plusieurs dossiers en même-temps :
 git add .
 ```
 
-## Les branches 
+## Branches 
 Lors d'un travail à plusieurs, git permet d'identifier chaque modifications, sur un projet commun avec des commits et des branches différentes.
 Une branche contient plusieurs commits avec un pointeur, en avançant dans le projet, les commits augmentent sur la branche. 
 Travailler sur une branche secondaire permet de ne pas interférer dans le travail de la branche principale et de garder la meilleure version.
@@ -74,13 +88,16 @@ git checkout develop
 git merge feature1  # fusionne sur la branche develop
 git branch -d feature1 # supprime la branche feature1
 ```
+![Les branches](https://uploads.sitepoint.com/wp-content/uploads/2019/06/155993572204-gitflow.png)
 
-## Pull request
+## Pull request <a name="#Commande"></a>
 Avec une collaboration sur un projet GIT il est nécessaire d'avoir un dépôt distant (Github).
 Récupère un projet upstream permettant de travailler en collaboration.
 Upstream représente un dépôt distant externe au votre.
 Origin réprésente votre dépôt distant.
 Fork permet d'aller chercher un dépôt d'upstream vers origin.
+
+![pull request](https://devopscube.com/wp-content/uploads/2021/02/git-forked-upstream-min.png.webp)
 
 ### Fonctionnement:
 1) Fork un projet upstream vers origin
