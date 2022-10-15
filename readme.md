@@ -51,8 +51,11 @@ sudo dnf install git-all
 
 ![commande de base ](https://blog.freelancerepublik.com/wp-content/uploads/2021/12/Git-Architechture.png)
 
+Le working directory est comme un espace de travail où vous travaillez sur un fichier.
+Le staging area est comme une salle d'attente avant que le fichier ne soit indexé par la commande git add.
+Le local repo est la validation du fichier par la commande git commit.
+Le remote repo est un serveur sur lequelle nous envoyons nos fichiers depuis local repo.
 ### Fonctionnement de GIT: <a name="#Commande"></a>
-
 
 #### Créer un projet à partir d'un dépôt vide
  Créer un nouveau dépôt dans Github
